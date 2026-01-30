@@ -1,38 +1,38 @@
 ===== REDDIT USER ANALYTICS REPORT =====
 
 Total Posts: 85
-Average Upvotes: 2.09
+Average Upvotes: 2.19
 Average Comments: 3.24
-Average Engagement: 5.33
+Average Engagement: 5.42
 
 ----- TOP PERFORMING POSTS -----
 
 Best by Upvotes:
 Title: Germany construction permits +30%, analysts calling 3% price growth through 2025 but affordability is the real point
-Upvotes: 23
+Upvotes: 25
 Subreddit: EuropeFIRE
 Link: https://reddit.com/r/EuropeFIRE/comments/1nlg5k3/germany_construction_permits_30_analysts_calling/
 
 Best by Engagement:
 Title: Looking for affiliates
-Engagement: 37
+Engagement: 38
 Subreddit: AffiliateMarket
 Link: https://reddit.com/r/AffiliateMarket/comments/1lpa6uf/looking_for_affiliates/
 
 ----- BEST POSTING HOURS (Avg Engagement) -----
 
-00:00 - 11.11
-03:00 - 7.82
-23:00 - 6.33
+00:00 - 11.67
+03:00 - 8.18
+23:00 - 6.0
 15:00 - 5.4
-02:00 - 5.31
-01:00 - 4.88
-22:00 - 4.57
-21:00 - 4.5
+02:00 - 5.08
+01:00 - 4.75
+22:00 - 4.71
+21:00 - 4.25
 19:00 - 4.0
 16:00 - 3.75
-14:00 - 2.6
-18:00 - 2.5
+14:00 - 3.2
+18:00 - 2.67
 04:00 - 2.33
 17:00 - 2.0
 11:00 - 1.5
@@ -40,63 +40,63 @@ Link: https://reddit.com/r/AffiliateMarket/comments/1lpa6uf/looking_for_affiliat
 
 ----- BEST DAYS (Avg Engagement) -----
 
-Wednesday: 21.0
+Wednesday: 21.5
 Tuesday: 6.71
-Friday: 6.06
-Sunday: 5.25
-Saturday: 4.78
-Thursday: 3.71
+Friday: 6.44
+Sunday: 5.5
+Saturday: 4.7
+Thursday: 3.64
 Monday: 3.0
 
 ----- SUBREDDIT PERFORMANCE -----
 
                        score_upvotes   comments  engagement  post_id
 subreddit                                                           
-EuropeFIRE                 23.000000  10.000000   33.000000        1
-growmybusiness              5.000000  16.000000   21.000000        1
-investing                  11.000000   8.000000   19.000000        1
-AffiliateMarket             4.666667   9.000000   13.666667        3
-BlackboxAI_                10.000000   3.000000   13.000000        1
-Newsletters                 3.000000   8.000000   11.000000        5
-InstagramMarketing          2.000000   7.000000    9.000000        1
-EntrepreneurRideAlong       5.000000   4.000000    9.000000        1
-ProductivityApps            2.000000   6.000000    8.000000        1
-AI_Agents                   1.500000   6.000000    7.500000        2
-Substack                    0.200000   7.200000    7.400000        5
-creators                    2.000000   5.000000    7.000000        1
-Entrepreneur                2.714286   3.714286    6.428571        7
-Procrastinationism          1.000000   5.000000    6.000000        1
-DigitalMarketing            1.000000   5.000000    6.000000        1
-VibeCodeCamp                4.000000   2.000000    6.000000        1
-programminghorror           0.000000   5.000000    5.000000        1
-Kenya                       2.000000   3.000000    5.000000        1
-passive_income              1.000000   4.000000    5.000000        1
-SMBConnectIndia             2.000000   3.000000    5.000000        1
-SMMA                        1.000000   4.000000    5.000000        1
-SaaS                        1.857143   2.428571    4.285714        7
-TikTok                      1.000000   3.000000    4.000000        1
-automation                  1.500000   2.500000    4.000000        2
-SaaSMarketing               2.000000   2.000000    4.000000        1
-LLMDevs                     1.000000   2.500000    3.500000        2
-DesignJobs                  2.000000   1.000000    3.000000        1
-FreelanceDevelopers         2.000000   1.000000    3.000000        1
-saasbuild                   1.000000   1.500000    2.500000        2
-Substack_Best               2.000000   0.000000    2.000000        1
-sales                       1.000000   1.000000    2.000000        1
-productivity                1.000000   1.000000    2.000000        1
-getdisciplined              1.000000   1.000000    2.000000        1
-startups                    1.000000   1.000000    2.000000        1
-beehiiv                     0.500000   1.000000    1.500000        2
-investing_discussion        1.000000   0.000000    1.000000        1
-micro_saas                  1.000000   0.000000    1.000000        1
-u_Reasonable_Cod_8762       1.000000   0.000000    1.000000        9
-SideProject                 1.000000   0.000000    1.000000        2
-freelance                   1.000000   0.000000    1.000000        1
-alphaandbetausers           1.000000   0.000000    1.000000        1
-WebDeveloperJobs            0.000000   1.000000    1.000000        1
-RealEstate                  1.000000   0.000000    1.000000        1
-Instagram                   1.000000   0.000000    1.000000        1
-GlobalMarketNews            1.000000   0.000000    1.000000        1
-Affiliatemarketing          1.000000   0.000000    1.000000        1
-vibecoding                  0.500000   0.000000    0.500000        2
-LocalLLaMA                  0.000000   0.000000    0.000000        1
+EuropeFIRE                      25.0  10.000000   35.000000        1
+growmybusiness                   7.0  16.000000   23.000000        1
+investing                        8.0   8.000000   16.000000        1
+AffiliateMarket                  5.0   9.000000   14.000000        3
+BlackboxAI_                      9.0   3.000000   12.000000        1
+EntrepreneurRideAlong            7.0   4.000000   11.000000        1
+Newsletters                      3.0   8.000000   11.000000        5
+InstagramMarketing               2.0   7.000000    9.000000        1
+creators                         3.0   5.000000    8.000000        1
+ProductivityApps                 2.0   6.000000    8.000000        1
+AI_Agents                        1.5   6.000000    7.500000        2
+Substack                         0.2   7.200000    7.400000        5
+VibeCodeCamp                     5.0   2.000000    7.000000        1
+Entrepreneur                     3.0   3.714286    6.714286        7
+DigitalMarketing                 1.0   5.000000    6.000000        1
+Procrastinationism               1.0   5.000000    6.000000        1
+SMBConnectIndia                  2.0   3.000000    5.000000        1
+passive_income                   1.0   4.000000    5.000000        1
+SMMA                             1.0   4.000000    5.000000        1
+programminghorror                0.0   5.000000    5.000000        1
+Kenya                            2.0   3.000000    5.000000        1
+SaaS                             2.0   2.428571    4.428571        7
+automation                       1.5   2.500000    4.000000        2
+SaaSMarketing                    2.0   2.000000    4.000000        1
+TikTok                           1.0   3.000000    4.000000        1
+LLMDevs                          1.0   2.500000    3.500000        2
+DesignJobs                       2.0   1.000000    3.000000        1
+FreelanceDevelopers              2.0   1.000000    3.000000        1
+saasbuild                        1.0   1.500000    2.500000        2
+productivity                     1.0   1.000000    2.000000        1
+getdisciplined                   1.0   1.000000    2.000000        1
+sales                            1.0   1.000000    2.000000        1
+Substack_Best                    2.0   0.000000    2.000000        1
+startups                         1.0   1.000000    2.000000        1
+beehiiv                          0.5   1.000000    1.500000        2
+micro_saas                       1.0   0.000000    1.000000        1
+u_Reasonable_Cod_8762            1.0   0.000000    1.000000        9
+investing_discussion             1.0   0.000000    1.000000        1
+SideProject                      1.0   0.000000    1.000000        2
+freelance                        1.0   0.000000    1.000000        1
+alphaandbetausers                1.0   0.000000    1.000000        1
+WebDeveloperJobs                 0.0   1.000000    1.000000        1
+RealEstate                       1.0   0.000000    1.000000        1
+Instagram                        1.0   0.000000    1.000000        1
+GlobalMarketNews                 1.0   0.000000    1.000000        1
+Affiliatemarketing               1.0   0.000000    1.000000        1
+vibecoding                       0.5   0.000000    0.500000        2
+LocalLLaMA                       0.0   0.000000    0.000000        1

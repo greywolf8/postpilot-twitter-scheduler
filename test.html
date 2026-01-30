@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit Scraper Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        input[type="text"]:focus {
+            border-color: #0079d3;
+            outline: none;
+        }
+        button {
+            background-color: #0079d3;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #0066b3;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+        }
+        .success {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        .error {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+        .loading {
+            text-align: center;
+            color: #0079d3;
+        }
+        pre {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .file-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .file-list li {
+            background-color: #e9ecef;
+            padding: 5px 10px;
+            margin: 2px 0;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Reddit User Scraper & Analytics</h1>
+        
+        <form id="scraperForm">
+            <div class="form-group">
+                <label for="username">Reddit Username:</label>
+                <input type="text" id="username" name="username" 
+                       placeholder="e.g., Reasonable_Cod_8762" required>
+            </div>
+            <button type="submit" id="submitBtn">Scrape & Analyze</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        const form = document.getElementById('scraperForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const resultDiv = document.getElementById('result');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value.trim();
+            
+            if (!username) {
+                showResult('Please enter a username', 'error');
+                return;
+            }
+
+            // Show loading state
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Scraping...';
+            showResult('<div class="loading">🔄 Scraping user data and running analytics...<br>This may take a few minutes.</div>', 'loading');
+
+            try {
+                const response = await fetch('/scrape', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ username: username })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    showSuccessResult(data);
+                } else {
+                    showResult(`Error: ${data.error}<br>Details: ${data.details || 'No additional details'}`, 'error');
+                }
+            } catch (error) {
+                showResult(`Network Error: ${error.message}<br>Make sure the server is running on http://localhost:5000`, 'error');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Scrape & Analyze';
+            }
+        });
+
+        function showResult(message, type) {
+            resultDiv.innerHTML = message;
+            resultDiv.className = `result ${type}`;
+            resultDiv.style.display = 'block';
+        }
+
+        function showSuccessResult(data) {
+            let html = `
+                <h3>✅ Success!</h3>
+                <p><strong>Username:</strong> u/${data.username}</p>
+                <p><strong>Message:</strong> ${data.message}</p>
+                
+                <h4>📁 Generated Files:</h4>
+                <ul class="file-list">
+            `;
+            
+            data.output_files.forEach(file => {
+                html += `<li>📄 ${file}</li>`;
+            });
+            
+            html += `</ul>
+                
+                <h4>📊 Scraper Output:</h4>
+                <pre>${data.scraper_output || 'No output'}</pre>
+                
+                <h4>📈 Analytics Output:</h4>
+                <pre>${data.analytics_output || 'No output'}</pre>
+            `;
+            
+            showResult(html, 'success');
+        }
+
+        // Test server connection on page load
+        window.addEventListener('load', async () => {
+            try {
+                const response = await fetch('/health');
+                if (response.ok) {
+                    console.log('✅ Server is running');
+                } else {
+                    showResult('⚠️ Server may not be running. Start with: <code>python main.py</code>', 'error');
+                }
+            } catch (error) {
+                showResult('⚠️ Cannot connect to server. Start with: <code>python main.py</code><br>Then open this page at http://localhost:5000/test.html', 'error');
+            }
+        });
+    </script>
+</body>
+</html>

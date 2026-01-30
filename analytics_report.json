@@ -2,82 +2,88 @@
   "title": "REDDIT USER ANALYTICS REPORT",
   "basic_stats": {
     "total_posts": 85,
-    "avg_upvotes": 2.09,
+    "avg_upvotes": 2.19,
     "avg_comments": 3.24,
-    "avg_engagement": 5.33,
-    "max_upvotes": 23,
-    "max_engagement": 37
+    "avg_engagement": 5.42,
+    "max_upvotes": 25,
+    "max_engagement": 38
   },
   "top_performing_posts": {
     "best_by_upvotes": {
       "title": "Germany construction permits +30%, analysts calling 3% price growth through 2025 but affordability is the real point",
-      "upvotes": 23,
+      "upvotes": 25,
       "subreddit": "EuropeFIRE",
       "link": "https://reddit.com/r/EuropeFIRE/comments/1nlg5k3/germany_construction_permits_30_analysts_calling/"
     },
     "best_by_engagement": {
       "title": "Looking for affiliates",
-      "engagement": 37,
+      "engagement": 38,
       "subreddit": "AffiliateMarket",
       "link": "https://reddit.com/r/AffiliateMarket/comments/1lpa6uf/looking_for_affiliates/"
     }
   },
   "best_posting_hours": {
-    "00:00": 11.11,
-    "03:00": 7.82,
-    "23:00": 6.33,
+    "00:00": 11.67,
+    "03:00": 8.18,
+    "23:00": 6.0,
     "15:00": 5.4,
-    "02:00": 5.31,
-    "01:00": 4.88,
-    "22:00": 4.57,
-    "21:00": 4.5,
+    "02:00": 5.08,
+    "01:00": 4.75,
+    "22:00": 4.71,
+    "21:00": 4.25,
     "19:00": 4.0,
     "16:00": 3.75,
-    "14:00": 2.6,
-    "18:00": 2.5,
+    "14:00": 3.2,
+    "18:00": 2.67,
     "04:00": 2.33,
     "17:00": 2.0,
     "11:00": 1.5,
     "13:00": 1.0
   },
   "best_days": {
-    "Wednesday": 21.0,
+    "Wednesday": 21.5,
     "Tuesday": 6.71,
-    "Friday": 6.06,
-    "Sunday": 5.25,
-    "Saturday": 4.78,
-    "Thursday": 3.71,
+    "Friday": 6.44,
+    "Sunday": 5.5,
+    "Saturday": 4.7,
+    "Thursday": 3.64,
     "Monday": 3.0
   },
   "subreddit_performance": {
     "EuropeFIRE": {
-      "score_upvotes": 23.0,
+      "score_upvotes": 25.0,
       "comments": 10.0,
-      "engagement": 33.0,
+      "engagement": 35.0,
       "post_id": 1
     },
     "growmybusiness": {
-      "score_upvotes": 5.0,
+      "score_upvotes": 7.0,
       "comments": 16.0,
-      "engagement": 21.0,
+      "engagement": 23.0,
       "post_id": 1
     },
     "investing": {
-      "score_upvotes": 11.0,
+      "score_upvotes": 8.0,
       "comments": 8.0,
-      "engagement": 19.0,
+      "engagement": 16.0,
       "post_id": 1
     },
     "AffiliateMarket": {
-      "score_upvotes": 4.666666666666667,
+      "score_upvotes": 5.0,
       "comments": 9.0,
-      "engagement": 13.666666666666666,
+      "engagement": 14.0,
       "post_id": 3
     },
     "BlackboxAI_": {
-      "score_upvotes": 10.0,
+      "score_upvotes": 9.0,
       "comments": 3.0,
-      "engagement": 13.0,
+      "engagement": 12.0,
+      "post_id": 1
+    },
+    "EntrepreneurRideAlong": {
+      "score_upvotes": 7.0,
+      "comments": 4.0,
+      "engagement": 11.0,
       "post_id": 1
     },
     "Newsletters": {
@@ -92,10 +98,10 @@
       "engagement": 9.0,
       "post_id": 1
     },
-    "EntrepreneurRideAlong": {
-      "score_upvotes": 5.0,
-      "comments": 4.0,
-      "engagement": 9.0,
+    "creators": {
+      "score_upvotes": 3.0,
+      "comments": 5.0,
+      "engagement": 8.0,
       "post_id": 1
     },
     "ProductivityApps": {
@@ -116,23 +122,17 @@
       "engagement": 7.4,
       "post_id": 5
     },
-    "creators": {
-      "score_upvotes": 2.0,
-      "comments": 5.0,
+    "VibeCodeCamp": {
+      "score_upvotes": 5.0,
+      "comments": 2.0,
       "engagement": 7.0,
       "post_id": 1
     },
     "Entrepreneur": {
-      "score_upvotes": 2.7142857142857144,
+      "score_upvotes": 3.0,
       "comments": 3.7142857142857144,
-      "engagement": 6.428571428571429,
+      "engagement": 6.714285714285714,
       "post_id": 7
-    },
-    "Procrastinationism": {
-      "score_upvotes": 1.0,
-      "comments": 5.0,
-      "engagement": 6.0,
-      "post_id": 1
     },
     "DigitalMarketing": {
       "score_upvotes": 1.0,
@@ -140,10 +140,28 @@
       "engagement": 6.0,
       "post_id": 1
     },
-    "VibeCodeCamp": {
-      "score_upvotes": 4.0,
-      "comments": 2.0,
+    "Procrastinationism": {
+      "score_upvotes": 1.0,
+      "comments": 5.0,
       "engagement": 6.0,
+      "post_id": 1
+    },
+    "SMBConnectIndia": {
+      "score_upvotes": 2.0,
+      "comments": 3.0,
+      "engagement": 5.0,
+      "post_id": 1
+    },
+    "passive_income": {
+      "score_upvotes": 1.0,
+      "comments": 4.0,
+      "engagement": 5.0,
+      "post_id": 1
+    },
+    "SMMA": {
+      "score_upvotes": 1.0,
+      "comments": 4.0,
+      "engagement": 5.0,
       "post_id": 1
     },
     "programminghorror": {
@@ -158,35 +176,11 @@
       "engagement": 5.0,
       "post_id": 1
     },
-    "passive_income": {
-      "score_upvotes": 1.0,
-      "comments": 4.0,
-      "engagement": 5.0,
-      "post_id": 1
-    },
-    "SMBConnectIndia": {
-      "score_upvotes": 2.0,
-      "comments": 3.0,
-      "engagement": 5.0,
-      "post_id": 1
-    },
-    "SMMA": {
-      "score_upvotes": 1.0,
-      "comments": 4.0,
-      "engagement": 5.0,
-      "post_id": 1
-    },
     "SaaS": {
-      "score_upvotes": 1.8571428571428572,
+      "score_upvotes": 2.0,
       "comments": 2.4285714285714284,
-      "engagement": 4.285714285714286,
+      "engagement": 4.428571428571429,
       "post_id": 7
-    },
-    "TikTok": {
-      "score_upvotes": 1.0,
-      "comments": 3.0,
-      "engagement": 4.0,
-      "post_id": 1
     },
     "automation": {
       "score_upvotes": 1.5,
@@ -197,6 +191,12 @@
     "SaaSMarketing": {
       "score_upvotes": 2.0,
       "comments": 2.0,
+      "engagement": 4.0,
+      "post_id": 1
+    },
+    "TikTok": {
+      "score_upvotes": 1.0,
+      "comments": 3.0,
       "engagement": 4.0,
       "post_id": 1
     },
@@ -224,18 +224,6 @@
       "engagement": 2.5,
       "post_id": 2
     },
-    "Substack_Best": {
-      "score_upvotes": 2.0,
-      "comments": 0.0,
-      "engagement": 2.0,
-      "post_id": 1
-    },
-    "sales": {
-      "score_upvotes": 1.0,
-      "comments": 1.0,
-      "engagement": 2.0,
-      "post_id": 1
-    },
     "productivity": {
       "score_upvotes": 1.0,
       "comments": 1.0,
@@ -245,6 +233,18 @@
     "getdisciplined": {
       "score_upvotes": 1.0,
       "comments": 1.0,
+      "engagement": 2.0,
+      "post_id": 1
+    },
+    "sales": {
+      "score_upvotes": 1.0,
+      "comments": 1.0,
+      "engagement": 2.0,
+      "post_id": 1
+    },
+    "Substack_Best": {
+      "score_upvotes": 2.0,
+      "comments": 0.0,
       "engagement": 2.0,
       "post_id": 1
     },
@@ -260,12 +260,6 @@
       "engagement": 1.5,
       "post_id": 2
     },
-    "investing_discussion": {
-      "score_upvotes": 1.0,
-      "comments": 0.0,
-      "engagement": 1.0,
-      "post_id": 1
-    },
     "micro_saas": {
       "score_upvotes": 1.0,
       "comments": 0.0,
@@ -277,6 +271,12 @@
       "comments": 0.0,
       "engagement": 1.0,
       "post_id": 9
+    },
+    "investing_discussion": {
+      "score_upvotes": 1.0,
+      "comments": 0.0,
+      "engagement": 1.0,
+      "post_id": 1
     },
     "SideProject": {
       "score_upvotes": 1.0,

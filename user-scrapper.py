@@ -1,6 +1,7 @@
 import praw
 import pandas as pd
 from datetime import datetime
+import sys
 
 
 # ================= CONFIG =================
@@ -10,7 +11,8 @@ CLIENT_SECRET = "x2AJzeBP9qe1Sob81a92ZQYjyBDdxg"
 USER_AGENT = "test_bot"
 
 
-TARGET_USERNAME = "Reasonable_Cod_8762"   # Change this
+# Get username from command line argument or use default
+TARGET_USERNAME = sys.argv[1] if len(sys.argv) > 1 else "Reasonable_Cod_8762"
 POST_LIMIT = 300           # Max: ~1000 (API limit)
 OUTPUT_FILE = "user_analytics.csv"
 
