@@ -1,11 +1,13 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import json
 
 
 # ================= CONFIG =================
 
 CSV_FILE = "user_analytics.csv"
 REPORT_FILE = "analytics_report.txt"
+JSON_REPORT_FILE = "analytics_report.json"
 
 
 # ================= LOAD DATA =================
@@ -83,6 +85,41 @@ def subreddit_analysis(df):
 
 
 # ================= REPORT =================
+
+def generate_json_report(df, stats, best_upvote, best_engagement,
+                        hour_stats, day_stats, sub_stats):
+    
+    report_data = {
+        "title": "REDDIT USER ANALYTICS REPORT",
+        "basic_stats": stats,
+        "top_performing_posts": {
+            "best_by_upvotes": {
+                "title": best_upvote['title'],
+                "upvotes": int(best_upvote['score_upvotes']),
+                "subreddit": best_upvote['subreddit'],
+                "link": best_upvote['permalink']
+            },
+            "best_by_engagement": {
+                "title": best_engagement['title'],
+                "engagement": int(best_engagement['engagement']),
+                "subreddit": best_engagement['subreddit'],
+                "link": best_engagement['permalink']
+            }
+        },
+        "best_posting_hours": {
+            f"{hour:02d}:00": round(val, 2) for hour, val in hour_stats.items()
+        },
+        "best_days": {
+            day: round(val, 2) for day, val in day_stats.items()
+        },
+        "subreddit_performance": sub_stats.to_dict('index')
+    }
+    
+    with open(JSON_REPORT_FILE, "w", encoding="utf-8") as f:
+        json.dump(report_data, f, indent=2, ensure_ascii=False)
+    
+    print(f"[SUCCESS] JSON report generated → {JSON_REPORT_FILE}")
+
 
 def generate_report(df, stats, best_upvote, best_engagement,
                     hour_stats, day_stats, sub_stats):
@@ -167,6 +204,11 @@ def main():
     sub_stats = subreddit_analysis(df)
 
     generate_report(
+        df, stats, best_upvote, best_engagement,
+        hour_stats, day_stats, sub_stats
+    )
+    
+    generate_json_report(
         df, stats, best_upvote, best_engagement,
         hour_stats, day_stats, sub_stats
     )
